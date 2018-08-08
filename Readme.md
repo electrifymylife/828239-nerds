@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Galina Vikhrova](https://up.htmlacademy.ru/htmlcss/22/user/828239).
-* Наставник: `Неизвестно`.
+* Наставник: [Катя Матя] (https://htmlacademy.ru/profile/id84950).
 
 ---
 
