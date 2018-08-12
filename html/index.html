@@ -1,103 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
   </head>
   <body>
   	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a class="main-header-logo">
-  				<img src="img/logo-small.svg" width="100" height="100" alt="Логотип дизайн-студии Нёрдс">
+  		<nav class="menu">
+  			<a class="menu-logo">
+  				<img src="img/menu-logo-small.svg" width="100" height="100" alt="Нёрдс">
   			</a>
-  			<ul class="site-navigation">
-  				<li><a href="info.html">Студия</a></li>
-  				<li><a href="clients.html">Клиенты</a></li>
-  				<li><a href="shop.html">Магазин</a></li>
-  				<li><a href="contacts.html">Контакты</a></li>
+  			<ul class="menu-navigation">
+  				<li><a href="#">Студия</a></li>
+  				<li><a href="#">Клиенты</a></li>
+  				<li><a href="catalog.html">Магазин</a></li>
+  				<li><a href="#">Контакты</a></li>
   			</ul>
-  			<ul class="shop-navigation">
-  				<li class="basket">Корзина</li>
+  			<ul class="menu-user">
+  				<li class="menu-user-basket">Корзина</li>
   			</ul>
   		</nav>
   	</header>
-  	<main class="container">
-  		<h1 class="visually-hidden">Магазин готовых шаблонов</h1><!-- нельзя ли использовать вместо класса атрибут hidden? он же глобальный -->
-      <span class="slider"></span>
-        <!-- <section class="description">
-          <b class="slogan">Долго, дорого, скрупулезно.</b>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button learn-more-button" href="info.html">Узнать больше</a>
-        </section> -->
-        <section class="servises">
-          <h2 class="visually-hidden">Предоставляемые услуги</h2>
-          <ul class="servises-list">
-            <li class="servise-item">
-              <h3>Веб-сайты</h3>
-              <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-              <a class="button order-button order-site" href="site-catalog.html">Заказать</a>
-            </li>
-            <li class="servise-item">
-              <h3>Приложения</h3>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button order-button order-app" href="app-catalog.html">Заказать</a>
-            </li>
-            <li class="servise-item">
-              <h3>Презентации</h3>
-              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button order-button order-presentation" href="presentation-catalog.html">Заказать</a>
-            </li>
-          </ul>
-        </section>
-        <section class="about">
-          <b class="lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+  	<main>
+  		<h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+      <section class="slide">
+        <h2 class="visually-hidden">Описание магазина</h2>
+        <b class="slide-slogan">Долго, дорого, скрупулезно.</b>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="slide-button" href="#">Узнать больше</a>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Предоставляемые услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+            <a class="services-button" href="catalog.html">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="services-button" href="catalog.html">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="services-button" href="catalog.html">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2 class="visually-hidden">О компании</h2>
+        <div class="about-text">
+          <b class="about-text-lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h4>Выполняем заказы на разработку:</h4>
+          <p class="about-text-services">Выполняем заказы на разработку:</p>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
-        </section>
-        <div>
-          <img src="img/logo-big.svg" width="200" height="200" alt="Логотип дизайн-студии Нёрдс">
+        </div>
+        <div class="about-table">
+          <img src="img/logo-big.svg" width="200" height="200" alt="Нёрдс">
           <table border="1">
             <caption>С 2004 года любим точность во всём:</caption>
-            <tr class="percent">
+            <tr class="about-table-percent">
               <td>146%</td>
               <td>100%</td>
               <td>50%</td>
             </tr>
-            <tr class="features">
+            <tr class="about-table-features">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
             </tr>
           </table>
         </div>
-        <section class="partners">
-          <ul>
-            <li><img src="img/logo-academy.svg" width="150" height="150" alt="Логотип академии html academy"></li>
-            <li><img src="img/logo-borodinski.svg" width="150" height="150" alt="Логотип барбершопа Бородинский"></li>
-            <li><img src="img/logo-pink.svg" width="150" height="150" alt="Логотип компании Pink"></li>
-            <li><img src="img/logo-mishka" width="150" height="150" alt="Логотип компании Mishka"></li>
-          </ul>
-        </section>
+      </section>
+      <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
+        <ul>
+          <li><img src="img/logo-academy.svg" width="150" height="150" alt="Html Academy"></li>
+          <li><img src="img/logo-borodinski.svg" width="150" height="150" alt="Барбершоп Бородинский"></li>
+          <li><img src="img/logo-pink.svg" width="150" height="150" alt="Pink"></li>
+          <li><img src="img/logo-mishka.svg" width="150" height="150" alt="Mishka"></li>
+        </ul>
+      </section>
   	</main>
   	<footer class="main-footer">
-      <span class="map"></span>
-      <section class="contacts">
-        <b>NЁRDS DESIGN STUDIO</b>
-        <p>191186, Санкт-Петербург,<br>
-        ул.Б.Конюшенная, д.19/8</p>
-        <p>тел.+7(812)275-75-75</p>
-        <span class="button contact-us-button">Напишите нам</span>
-      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map-contacts">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург,<br>
+          ул.Б.Конюшенная, д.19/8</p>
+          <p>тел.+7(812)275-75-75</p>
+          <span class="map-button">Напишите нам</span>
+        </div>
+        <img src="img/map.png" width="300" height="300" alt="191186, Санкт-Петербург,ул.Б.Конюшенная, д.19/8">
+      </section>  
       <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="footer-social-button" href="#">Вконтакте</a></li>
+          <li><a class="footer-social-button" href="#">Фейсбук</a></li>
+          <li><a class="footer-social-button" href="#">Инстаграм</a></li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
