@@ -2,11 +2,120 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия "Нёрдс"</title>
   </head>
   <body>
+  	<header class="main-header">
+  		<nav class="menu">
+  			<a class="menu-logo">
+  				<img src="img/menu-logo-small.svg" width="160" height="65" alt="Нёрдс">
+  			</a>
+  			<ul class="menu-navigation">
+  				<li><a href="#">Студия</a></li>
+  				<li><a href="#">Клиенты</a></li>
+  				<li><a href="catalog.html">Магазин</a></li>
+  				<li><a href="#">Контакты</a></li>
+  			</ul>
+  			<ul class="menu-user">
+  				<li class="menu-user-basket">Корзина</li>
+  			</ul>
+  		</nav>
+  	</header>
+  	<main>
+  		<h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Описание магазина</h2>
+        <b class="slider-slogan">Долго, дорого, скрупулезно.</b>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="slider-button" href="#">Узнать больше</a>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Предоставляемые услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+            <a class="services-button" href="catalog.html">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="services-button" href="catalog.html">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="services-button" href="catalog.html">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2 class="visually-hidden">О компании</h2>
+        <div class="about-text">
+          <b class="about-text-lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="about-text-services">Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-table">
+          <img src="img/logo-big.png" width="360" height="208" alt="Нёрдс">
+          <table border="1">
+            <caption>С 2004 года любим точность во всём:</caption>
+            <tr class="about-table-percent">
+              <td>146%</td>
+              <td>100%</td>
+              <td>50%</td>
+            </tr>
+            <tr class="about-table-features">
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
+        <ul>
+          <li><img src="img/logo-academy.svg" width="199" height="68" alt="Html Academy"></li>
+          <li><img src="img/logo-borodinski.svg" width="209" height="90" alt="Барбершоп Бородинский"></li>
+          <li><img src="img/logo-pink.svg" width="185" height="52" alt="Pink"></li>
+          <li><img src="img/logo-mishka.svg" width="173" height="84" alt="Mishka"></li>
+        </ul>
+      </section>
+  	</main>
+  	<footer class="main-footer">
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map-contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург,<br>
+          ул.Б.Конюшенная, д.19/8</p>
+          <p>тел.+7(812)275-75-75</p>
+          <a class="map-button" href="#">Напишите нам</a>
+        </div>
+        <img src="img/map.png" width="1140" height="416" alt="191186, Санкт-Петербург,ул.Б.Конюшенная, д.19/8">
+      </section>  
+      <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul>
+          <li><a class="footer-social-button" href="#">Вконтакте</a></li>
+          <li><a class="footer-social-button" href="#">Фейсбук</a></li>
+          <li><a class="footer-social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+  	</footer>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <!-- здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
