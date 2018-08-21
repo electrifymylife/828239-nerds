@@ -18,7 +18,7 @@
 				</ul>
 				<ul class="menu-user">
 					<li class="menu-user-basket">
-						<a class="menu-user-basket" href="#">Корзина</a>
+						<a class="basket" href="#">Корзина</a>
 					</li>
 				</ul>
 			</nav>
@@ -27,7 +27,7 @@
 			<h1>Магазин готовых шаблонов</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form class="filter" method="get" action="#" oninput="output.value=price.value">
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="output.value=price.value">
 					<fieldset>
 						<legend>Стоимость:</legend>
 						<input type="range" name="price" min="0" max="15000" step="100">
@@ -85,8 +85,8 @@
 					<li><a href="#">По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По названию</a></li>
-					<li><a href="#">Вверх</a></li>
-					<li><a href="#">Вниз</a></li>
+					<li><a href="#"><span class="visually-hidden">Вверх</span></a></li>
+					<li><a href="#"><span class="visually-hidden">Вниз</span></a></li>
 				</ul>
 			</div>
 			<section class="templates">
@@ -192,19 +192,19 @@
   	</footer>
 
 		<section class="modal">
-      <form class="modal-form" action="#" method="post">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
       	<h2>Напишите нам</h2>
         <p>
           <label for="username">Ваше имя:</label>
-          <input class="modal-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="modal-userinfo" id="username" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="user-email">Ваш e-mail:</label>
-          <input class="modal-email" id="user-email" type="email" name="email" placeholder="email@example.com">
+          <input class="modal-userinfo" id="user-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="user-text">Текст письма:</label>
-          <textarea class="modal-text" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-userinfo" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>

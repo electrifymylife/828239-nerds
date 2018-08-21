@@ -18,7 +18,7 @@
   			</ul>
   			<ul class="menu-user">
   				<li class="menu-user-basket">
-            <a class="menu-user-basket" href="#">Корзина</a>    
+            <a class="basket" href="#">Корзина</a>    
           </li>
   			</ul>
   		</nav>
@@ -83,10 +83,10 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul>
-          <li><img src="img/logo-academy.png" width="260" height="180" alt="Html Academy"></li>
-          <li><img src="img/logo-borodinski.png" width="260" height="180" alt="Барбершоп Бородинский"></li>
-          <li><img src="img/logo-pink.png" width="260" height="180" alt="Pink"></li>
-          <li><img src="img/logo-mishka.png" width="260" height="180" alt="Mishka"></li>
+          <li><a href="#"><img src="img/logo-academy.png" width="260" height="180" alt="Html Academy"></a></li>
+          <li><a href="#"><img src="img/logo-borodinski.png" width="260" height="180" alt="Барбершоп Бородинский"></a></li>
+          <li><a href="#"><img src="img/logo-pink.png" width="260" height="180" alt="Pink"></a></li>
+          <li><a href="#"><img src="img/logo-mishka.png" width="260" height="180" alt="Mishka"></a></li>
         </ul>
       </section>
   	</main>
@@ -105,9 +105,9 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul>
-          <li><a class="footer-social-button" href="#">Вконтакте</a></li>
-          <li><a class="footer-social-button" href="#">Фейсбук</a></li>
-          <li><a class="footer-social-button" href="#">Инстаграм</a></li>
+          <li><a class="footer-social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="footer-social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="footer-social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -115,19 +115,19 @@
   	</footer>
 
     <section class="modal">
-      <form class="modal-form" action="#" method="post">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
         <p>
           <label for="username">Ваше имя:</label>
-          <input class="modal-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="modal-userinfo" id="username" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="user-email">Ваш e-mail:</label>
-          <input class="modal-email" id="user-email" type="email" name="email" placeholder="email@example.com">
+          <input class="modal-userinfo" id="user-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="user-text">Текст письма:</label>
-          <textarea class="modal-text" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-userinfo" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
