@@ -28,7 +28,16 @@ a  {
 }
 
 .menu-navigation,
-.menu-user {
+.menu-user,
+.about-text ul,
+.services-list,
+.table-percent,
+.table-features,
+.partners ul,
+.footer-social ul,
+.filter ul,
+.sorting ul,
+.templates ul {
 	list-style: none;
 }
 
@@ -44,6 +53,14 @@ a  {
 	color: #fb565a;
 }
 
+.menu-navigation a:active {
+	color: #a6a6a6;
+}
+
+.menu-user: a:active {
+	color: #a6a6a6;
+}
+
 .slider-slogan {
 	list-style: none;
 	color: #000000;
@@ -54,10 +71,6 @@ a  {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
-}
-
-.services-list {
-	list-style: none;
 }
 
 .services-item h3 {
@@ -73,6 +86,264 @@ a  {
 	line-height: 45px;
 }
 
-.about-text-services {
+.about-text-services,
+.table-caption {
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
+.table-percent li {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 10px;
+}
+
+.map-contacts h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.footer-slogan {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.button {
+	font: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #fb565a;
+	border: none;
+}
+
+.slider-button:hover,
+.slider-button:focus,
+.services-button-web:hover,
+.services-button-web:focus {
+	background-color: #e74246;
+}
+
+.slider-button:active,
+.services-button-web:active {
+	color: #e37376;
+	background-color: #d7373b;
+}
+
+.services-button-app {
+	background-color: #00ca74;
+}
+
+.services-button-app:hover,
+.services-button-app:focus {
+	background-color: #00bc6c;
+}
+
+.services-button-app:active {
+	color: #4dc491;
+	background-color: #00aa62;
+}
+
+.services-button-pres {
+	background-color: #efc84a;
+}
+
+.services-button-pres:hover,
+.services-button-pres:focus {
+	background-color: #eab534;
+}
+
+.services-button-pres:active {
+	color: #edc265;
+	background-color: #e5a722;
+}
+
+.modal {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.modal h2 {
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+}
+
+.modal-form label {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.modal-userinfo {
+	font: inherit;
+	border: 2px solid #d7dcde;
+}
+
+.modal-userinfo:hover {
+	border-color: #b4b9bb;
+}
+
+.modal-userinfo:focus {
+	border-color: #000000;
+}
+
+input[type="email"]:invalid {
+	color: #e74246;
+	border-color: #e74246;
+}
+
+/*меняем цвет плейсхолдера в покое и при наведении*/
+
+input::-webkit-input-placeholder {
+	color: rgba(68, 68, 68, 0.5) !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+	color: rgba(68, 68, 68, 0.5) !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+	color: rgba(68, 68, 68, 0.5) !important;  
+}
+ 
+input:-ms-input-placeholder {  
+	color: rgba(68, 68, 68, 0.5) !important;  
+}
+
+textarea::-webkit-input-placeholder {
+	color: rgba(68, 68, 68, 0.5) !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+	color: rgba(68, 68, 68, 0.5) !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: rgba(68, 68, 68, 0.5) !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+	color: rgba(68, 68, 68, 0.5) !important;  
+}
+
+/*меняем цвет плейсхолдера в фокусе*/
+
+input:focus::-webkit-input-placeholder {
+	color: rgb(68, 68, 68) !important;
+}
+
+input:focus:-moz-placeholder { /* Firefox 18- */
+	color: rgb(68, 68, 68) !important;  
+}
+ 
+input:focus::-moz-placeholder {  /* Firefox 19+ */
+	color: rgb(68, 68, 68) !important;  
+}
+ 
+input:focus:-ms-input-placeholder {  
+	color: rgb(68, 68, 68) !important;  
+}
+
+textarea:focus::-webkit-input-placeholder {
+	color: rgb(68, 68, 68) !important;
+}
+ 
+textarea:focus:-moz-placeholder { /* Firefox 18- */
+	color: rgb(68, 68, 68) !important;  
+}
+ 
+textarea:focus::-moz-placeholder {  /* Firefox 19+ */
+	color: rgb(68, 68, 68) !important;  
+}
+ 
+textarea:focus:-ms-input-placeholder {  
+color: rgb(68, 68, 68) !important;  
+}
+
+.filter legend {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.sorting p {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sorting a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting a:hover,
+.sorting a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting a:active {
+	color: rgb(0, 0, 0);
+}
+
+.filter-option label {
+	color: #283136;
+}
+
+/*фокуса нет, потому что tab ходит
+по значкам, а не по их названиям*/
+.filter-option label:hover {
+	color: #000000;
+}
+
+.filter-option input:disabled {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-button {
+	color: #000000;
+	background-color: #eeeeee; 
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	background-color: #dfdfdf;
+}
+
+.filter-button:active {
+	color: #959595;
+	background-color: #dfdfdf;
+}
+
+.templates-item h3 {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.templates-item-description {
+	color: #959595;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.templates-button:hover,
+.templates-button:focus {
+	background-color: #e74246;
+}
+
+.templates-button:active {
+	background-color: #d7373b;
 }
