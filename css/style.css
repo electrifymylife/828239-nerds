@@ -57,7 +57,7 @@ a  {
 	color: #a6a6a6;
 }
 
-.menu-user: a:active {
+.menu-user a:active {
 	color: #a6a6a6;
 }
 
@@ -93,9 +93,15 @@ a  {
 }
 
 .table-percent li {
-	font-size: 46px;
+	font-size: 45px;
 	font-weight: 700;
-	line-height: 10px;
+	line-height: 45px;
+}
+
+.table-feautures li {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
 }
 
 .map-contacts h3 {
@@ -104,16 +110,29 @@ a  {
 	line-height: 30px;
 }
 
+.map-contacts p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
 .footer-slogan {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
 }
 
+.footer-discount {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
 .button {
 	font: inherit;
 	font-size: 16px;
 	font-weight: 500;
+	line-height: 18px;
 	color: #ffffff;
 	text-align: center;
 	vertical-align: middle;
@@ -122,43 +141,40 @@ a  {
 	border: none;
 }
 
-.slider-button:hover,
-.slider-button:focus,
-.services-button-web:hover,
-.services-button-web:focus {
+.button-red:hover,
+.button-red:focus {
 	background-color: #e74246;
 }
 
-.slider-button:active,
-.services-button-web:active {
+.button-red:active {
 	color: #e37376;
 	background-color: #d7373b;
 }
 
-.services-button-app {
+.button-green {
 	background-color: #00ca74;
 }
 
-.services-button-app:hover,
-.services-button-app:focus {
+.button-green:hover,
+.button-green:focus {
 	background-color: #00bc6c;
 }
 
-.services-button-app:active {
+.button-green:active {
 	color: #4dc491;
 	background-color: #00aa62;
 }
 
-.services-button-pres {
+.button-yellow {
 	background-color: #efc84a;
 }
 
-.services-button-pres:hover,
-.services-button-pres:focus {
+.button-yellow:hover,
+.button-yellow:focus {
 	background-color: #eab534;
 }
 
-.services-button-pres:active {
+.button-yellow:active {
 	color: #edc265;
 	background-color: #e5a722;
 }
@@ -201,69 +217,77 @@ input[type="email"]:invalid {
 /*меняем цвет плейсхолдера в покое и при наведении*/
 
 input::-webkit-input-placeholder {
-	color: rgba(68, 68, 68, 0.5) !important;
+	color: rgba(68, 68, 68, 0.5);
 }
  
 input:-moz-placeholder { /* Firefox 18- */
-	color: rgba(68, 68, 68, 0.5) !important;  
+	color: rgba(68, 68, 68, 0.5);  
 }
  
 input::-moz-placeholder {  /* Firefox 19+ */
-	color: rgba(68, 68, 68, 0.5) !important;  
+	color: rgba(68, 68, 68, 0.5);  
 }
  
 input:-ms-input-placeholder {  
-	color: rgba(68, 68, 68, 0.5) !important;  
+	color: rgba(68, 68, 68, 0.5);  
 }
 
 textarea::-webkit-input-placeholder {
-	color: rgba(68, 68, 68, 0.5) !important;
+	color: rgba(68, 68, 68, 0.5);
 }
  
 textarea:-moz-placeholder { /* Firefox 18- */
-	color: rgba(68, 68, 68, 0.5) !important;  
+	color: rgba(68, 68, 68, 0.5);  
 }
  
 textarea::-moz-placeholder {  /* Firefox 19+ */
-	color: rgba(68, 68, 68, 0.5) !important;  
+	color: rgba(68, 68, 68, 0.5);  
 }
  
 textarea:-ms-input-placeholder {  
-	color: rgba(68, 68, 68, 0.5) !important;  
+	color: rgba(68, 68, 68, 0.5);  
 }
 
 /*меняем цвет плейсхолдера в фокусе*/
 
 input:focus::-webkit-input-placeholder {
-	color: rgb(68, 68, 68) !important;
+	color: rgb(68, 68, 68);
 }
 
 input:focus:-moz-placeholder { /* Firefox 18- */
-	color: rgb(68, 68, 68) !important;  
+	color: rgb(68, 68, 68);  
 }
  
 input:focus::-moz-placeholder {  /* Firefox 19+ */
-	color: rgb(68, 68, 68) !important;  
+	color: rgb(68, 68, 68);  
 }
  
 input:focus:-ms-input-placeholder {  
-	color: rgb(68, 68, 68) !important;  
+	color: rgb(68, 68, 68);  
 }
 
 textarea:focus::-webkit-input-placeholder {
-	color: rgb(68, 68, 68) !important;
+	color: rgb(68, 68, 68);
 }
  
 textarea:focus:-moz-placeholder { /* Firefox 18- */
-	color: rgb(68, 68, 68) !important;  
+	color: rgb(68, 68, 68);  
 }
  
 textarea:focus::-moz-placeholder {  /* Firefox 19+ */
-	color: rgb(68, 68, 68) !important;  
+	color: rgb(68, 68, 68);  
 }
  
 textarea:focus:-ms-input-placeholder {  
-color: rgb(68, 68, 68) !important;  
+color: rgb(68, 68, 68);  
+}
+
+.catalog-name {
+	color: #000000;
+	background-color: #eeeeee;
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
 }
 
 .filter legend {
@@ -284,6 +308,16 @@ color: rgb(68, 68, 68) !important;
 
 .sorting a {
 	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.sorting-list-price {
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
 }
 
 .sorting a:hover,
@@ -297,29 +331,34 @@ color: rgb(68, 68, 68) !important;
 
 .filter-option label {
 	color: #283136;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
 }
 
-/*фокуса нет, потому что tab ходит
-по значкам, а не по их названиям*/
 .filter-option label:hover {
 	color: #000000;
 }
 
-.filter-option input:disabled {
+.filter-option input:focus + label {
+	color: #000000;
+}
+
+.filter-option input:disabled + label {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.filter-button {
+.button-gray {
 	color: #000000;
 	background-color: #eeeeee; 
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.button-gray:hover,
+.button-gray:focus {
 	background-color: #dfdfdf;
 }
 
-.filter-button:active {
+.button-gray:active {
 	color: #959595;
 	background-color: #dfdfdf;
 }
@@ -334,16 +373,38 @@ color: rgb(68, 68, 68) !important;
 
 .templates-item-description {
 	color: #959595;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
 }
 
-.templates-button:hover,
-.templates-button:focus {
-	background-color: #e74246;
+.pagination-item {
+	color: #000000;
+	background-color: #eeeeee;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
 }
 
-.templates-button:active {
-	background-color: #d7373b;
+.pagination-item-current {
+	background-color: #ffffff;
+	border: 2px solid #dbdbdb;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

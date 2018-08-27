@@ -27,7 +27,7 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Магазин готовых шаблонов</h1>
+			<h1 class="catalog-name">Магазин готовых шаблонов</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="output.value=price.value">
@@ -49,8 +49,8 @@
 								<label for="filter-fixed">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" id="filter-rubber">
-								<label for="filter-rubber">Резиновая</label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" id="filter-fluid">
+								<label for="filter-fluid">Резиновая</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -79,17 +79,17 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="button filter-button" type="submit">Показать</button>
+					<button class="button button-gray" type="submit">Показать</button>
 				</form>
 			</section>
 			<div class="sorting">
 				<p>Сортировать:</p>
 				<ul class="sorting-list">
-					<li><a href="#">По цене</a></li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По названию</a></li>
-					<li><a href="#"><span class="visually-hidden">Вверх</span></a></li>
-					<li><a href="#"><span class="visually-hidden">Вниз</span></a></li>
+					<li class="sorting-list-price">По цене</li>
+					<li class="sorting-list-type"><a href="#">По типу</a></li>
+					<li class="sorting-list-name"><a href="#">По названию</a></li>
+					<li class="sorting-list-up"><a href="#"><span class="visually-hidden">Вверх</span></a></li>
+					<li class="sorting-list-down"><a href="#"><span class="visually-hidden">Вниз</span></a></li>
 				</ul>
 			</div>
 			<section class="templates">
@@ -103,7 +103,7 @@
 						<div>
 							<a href="#"><h3>Sedona</h3></a>
 							<p class="templates-item-description">Информационный сайт для туристов</p>
-							<button class="button templates-button" type="button">9 900 РУБ.</button>
+							<button class="button button-red" type="button">9 900 РУБ.</button>
 						</div>
 					</li>
 					<!-- пинк -->
@@ -114,7 +114,7 @@
 						<div>
 							<a href="#"><h3>Pink App</h3></a>
 							<p class="templates-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-							<button class="button templates-button" type="button">9 900 РУБ.</button>
+							<button class="button button-red" type="button">9 900 РУБ.</button>
 						</div>
 					</li>
 					<!-- барбершоп -->
@@ -125,7 +125,7 @@
 						<div>
 							<a href="#"><h3>Barbershop</h3></a>
 							<p class="templates-item-description">Сайт салона красоты для мужчин</p>
-							<button class="button templates-button" type="button">9 900 РУБ.</button>
+							<button class="button button-red" type="button">9 900 РУБ.</button>
 						</div>
 					</li>
 					<!-- мишка -->
@@ -136,7 +136,7 @@
 						<div>
 							<a href="#"><h3>Mishka</h3></a>
 							<p class="templates-item-description">Интернет-магазин вязаных игрушек</p>
-							<button class="button templates-button" type="button">9 900 РУБ.</button>
+							<button class="button button-red" type="button">9 900 РУБ.</button>
 						</div>
 					</li>
 					<!-- учебный сайт -->
@@ -147,7 +147,7 @@
 						<div>
 							<a href="#"><h3>A plus</h3></a>
 							<p class="templates-item-description">Лендинг курсов повышения квалификации</p>
-							<button class="button templates-button" type="button">9 900 РУБ.</button>
+							<button class="button button-red" type="button">9 900 РУБ.</button>
 						</div>
 					</li>
 					<!-- квас -->
@@ -158,7 +158,7 @@
 						<div>
 							<a href="#"><h3>КВАСТ</h3></a>
 							<p class="templates-item-description">Промо-сайт производителя крафтового кваса</p>
-							<button class="button templates-button" type="button">9 900 РУБ.</button>
+							<button class="button button-red" type="button">9 900 РУБ.</button>
 						</div>
 					</li>
 				</ul>
@@ -166,7 +166,7 @@
 					<li class="pagination-item pagination-item-current"><a>1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item-next"><a href="#">Следующая</a></li>
+					<li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
 				</ul>
 			</section>
 		</main>
@@ -175,10 +175,10 @@
         <h2 class="visually-hidden">Карта</h2>
         <div class="map-contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>
+          <p>191186, Санкт-Петербург,
           ул.Б.Конюшенная, д.19/8</p>
           <p>тел.+7(812)275-75-75</p>
-          <a class="button map-button" href="#">Напишите нам</a>
+          <a class="button button-red" href="#">Напишите нам</a>
         </div>
         <img src="img/map.png" width="1140" height="416" alt="191186, Санкт-Петербург,ул.Б.Конюшенная, д.19/8">
       </section>  
@@ -190,7 +190,7 @@
           <li><a class="footer-social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
       </section>
   	</footer>
 
@@ -198,18 +198,18 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
         <p>
-          <label for="username">Ваше имя:</label><br>
+          <label for="username">Ваше имя:</label>
           <input class="modal-userinfo" id="username" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="user-email">Ваш e-mail:</label><br>
+          <label for="user-email">Ваш e-mail:</label>
           <input class="modal-userinfo" id="user-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-text">Текст письма:</label><br>
+          <label for="user-text">Текст письма:</label>
           <textarea class="modal-userinfo" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button-red" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
