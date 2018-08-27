@@ -340,11 +340,11 @@ color: rgb(68, 68, 68);
 	color: #000000;
 }
 
-.filter-option input:focus + label {
+.filter-input:focus + label {
 	color: #000000;
 }
 
-.filter-option input:disabled + label {
+.filter-input:disabled + label {
 	color: rgba(0, 0, 0, 0.3);
 }
 
