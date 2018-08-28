@@ -313,10 +313,9 @@ color: rgb(68, 68, 68);
 	line-height: 18px;
 }
 
-.sorting-list-price {
+.sorting-feature-current a {
 	color: rgb(0, 0, 0);
 	font-size: 14px;
-	font-weight: 400;
 	line-height: 18px;
 }
 
@@ -329,10 +328,12 @@ color: rgb(68, 68, 68);
 	color: rgb(0, 0, 0);
 }
 
+.sorting-feature-current a:hover {
+	color: rgb(0, 0, 0);
+}
+
 .filter-option label {
 	color: #283136;
-	font-size: 16px;
-	font-weight: 400;
 	line-height: 20px;
 }
 
@@ -373,22 +374,35 @@ color: rgb(68, 68, 68);
 
 .templates-item-description {
 	color: #959595;
-	font-size: 16px;
-	font-weight: 400;
 	line-height: 18px;
 }
 
-.pagination-item {
+.pagination-list a {
 	color: #000000;
 	background-color: #eeeeee;
-	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
 }
 
-.pagination-item-current {
+.pagination-item-current a {
 	background-color: #ffffff;
 	border: 2px solid #dbdbdb;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:active {
+	background-color: #ffffff;
+	color: #000000;
 }
 
 .visually-hidden:not(:focus):not(:active),
