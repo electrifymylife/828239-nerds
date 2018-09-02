@@ -14,42 +14,22 @@ a  {
 	text-decoration: none;
 }
 
-.main-header {
-	background-color: #eeeeee;
-	margin-bottom: 30px;
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*должен остаться вместо всего
+перечисления классов ниже.*/
+
+.container ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
-.menu {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 49px;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 30px;
-	color: #000000;
-	background-color: #eeeeee;
-	text-transform: uppercase;
-}
-
-.menu-logo {
-	width: 160px;
-	height: 65px;
-	margin-left: 140px;
-}
-
-.menu-navigation {
-	display: flex;
-	justify-content: space-between;
-	width: 440px;
-}
-
-.menu-user {
-	width: 180px;
-}
+/*нужно будет убрать*/
 
 .menu-navigation,
 .menu-user,
@@ -66,6 +46,41 @@ a  {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	padding-top: 49px;
+	padding-bottom: 30px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+	color: #000000;
+	background-color: #eeeeee;
+	text-transform: uppercase;
+}
+
+.menu-logo {
+	width: 160px;
+	height: 65px;
+}
+
+.menu-navigation {
+	display: flex;
+	width: 440px;
+}
+
+.menu-navigation li {
+	margin-top: 0;
+}
+
+.menu-user {
+	width: 180px;
 }
 
 .menu-navigation a,
@@ -94,7 +109,16 @@ a  {
 	background-color: #eeeeee;
 }
 
+.slider-slogan li:first-child {
+	display: block;
+}
+
+.slider-slogan li {
+	display: none;
+}
+
 .slider-slogan-text {
+	margin: 0;
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
@@ -363,8 +387,6 @@ color: rgb(68, 68, 68);
 
 .main-container {
 	display: flex;
-	margin-left: 140px;
-	width: 1160px;
 	justify-content: space-between;
 }
 
