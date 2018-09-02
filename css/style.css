@@ -20,9 +20,6 @@ a  {
   padding: 0 20px;
 }
 
-/*должен остаться вместо всего
-перечисления классов ниже.*/
-
 .container ul {
 	margin: 0;
 	padding: 0;
@@ -31,18 +28,7 @@ a  {
 
 /*нужно будет убрать*/
 
-.menu-navigation,
-.menu-user,
-.slider-slogan,
-.about-text ul,
-.services-list,
-.table-percent,
-.table-features,
-.partners-list,
-.footer-social ul,
-.filter ul,
-.sorting ul,
-.templates ul {
+.footer-social ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -54,7 +40,7 @@ a  {
 
 .menu {
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	padding-top: 49px;
 	padding-bottom: 30px;
 	font-size: 16px;
@@ -68,19 +54,19 @@ a  {
 .menu-logo {
 	width: 160px;
 	height: 65px;
+	margin-right: 200px;
 }
 
 .menu-navigation {
 	display: flex;
+	justify-content: space-between;
 	width: 440px;
 }
 
-.menu-navigation li {
-	margin-top: 0;
-}
-
 .menu-user {
-	width: 180px;
+	display: flex;
+	justify-content: flex-end;
+	width: 360px;
 }
 
 .menu-navigation a,
@@ -103,7 +89,7 @@ a  {
 	color: #a6a6a6;
 }
 
-.slider-slogan {
+.slider {
 	margin-bottom: 75px;
 	color: #000000;
 	background-color: #eeeeee;
@@ -126,18 +112,16 @@ a  {
 
 .services-list {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 1100px;
-	margin-left: 140px;
 	margin-bottom: 122px;
 }
 
 .services-item {
 	width: 300px;
+	margin-right: 100px;
 }
 
 .services-item h3 {
+	margin: 0;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px;
@@ -146,17 +130,17 @@ a  {
 
 .about {
 	display: flex;
-	margin-left: 140px;
-	width: 1160px;
-	justify-content: space-between;
 	margin-bottom: 125px;
 }
 
 .about-text {
+	margin: 0;
+	margin-right: 150px;
 	width: 660px;
 }
 
 .about-table {
+	margin: 0;
 	width: 360px;
 }
 
@@ -194,13 +178,11 @@ a  {
 
 .partners-list {
 	display: flex;
-	margin-left: 171px;
-	justify-content: space-between;
-	width: 1160px;
 }
 
 .map-contacts {
-	margin-top: 186px;	
+	margin: 0;
+	padding: 0;
 }
 
 .map-contacts h3 {
@@ -213,6 +195,11 @@ a  {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
+}
+
+.footer-slogan-container {
+	margin: 0;
+	padding: 0;
 }
 
 .footer-social {
@@ -283,6 +270,7 @@ a  {
 }
 
 .modal {
+	display: none;
 	color: #000000;
 	background-color: #ffffff;
 }
@@ -392,9 +380,10 @@ color: rgb(68, 68, 68);
 
 .catalog-name {
 	margin: 0;
+	padding: 0;
 	margin-bottom: 60px;
-	padding-top: 140px;
-	padding-bottom: 140px; 
+	padding-top: 80px;
+	padding-bottom: 110px; 
 	text-align: center;
 	color: #000000;
 	background-color: #eeeeee;
@@ -415,8 +404,6 @@ color: rgb(68, 68, 68);
 	display: flex;
 	width: 760px;
 	justify-content: space-between;
-	/*margin-left: 140px;*/
-	/*margin-bottom: 110px;*/
 }
 
 .sorting p {
@@ -502,13 +489,11 @@ color: rgb(68, 68, 68);
 	margin-left: 140px;
 	margin-bottom: 60px;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	width: 760px;
 }
 
 .templates-item {
 	width: 360px;
-	/*margin-left: 140px;*/
 	margin-bottom: 33px;
 	margin-right: 40px;
 }
@@ -533,7 +518,6 @@ color: rgb(68, 68, 68);
 .pagination-list {
 	display: flex;
 	width: 443px;
-	justify-content: space-between;
 }
 
 .pagination-list a {
@@ -541,6 +525,10 @@ color: rgb(68, 68, 68);
 	background-color: #eeeeee;
 	font-weight: 500;
 	line-height: 18px;
+}
+
+.pagination-item {
+	margin-right: 11px;
 }
 
 .pagination-item-current a {
