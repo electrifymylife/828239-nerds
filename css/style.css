@@ -26,23 +26,13 @@ a  {
 	list-style: none;
 }
 
-/*нужно будет убрать*/
-
-.footer-social ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 .main-header {
 	background-color: #eeeeee;
 }
 
 .menu {
 	display: flex;
-	/*align-items: center;*/
 	padding-top: 49px;
-	padding-bottom: 30px;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 30px;
@@ -54,7 +44,7 @@ a  {
 .menu-logo {
 	width: 160px;
 	height: 65px;
-	margin-right: 200px;
+	margin-right: 201px;
 }
 
 .menu-navigation {
@@ -67,6 +57,10 @@ a  {
 	display: flex;
 	justify-content: flex-end;
 	width: 360px;
+}
+
+.main-header ul {
+	padding-top: 26px;
 }
 
 .menu-navigation a,
@@ -90,7 +84,9 @@ a  {
 }
 
 .slider {
-	margin-bottom: 75px;
+	padding-top: 79px;
+	padding-bottom: 146px;
+	margin-bottom: 251px;
 	color: #000000;
 	background-color: #eeeeee;
 }
@@ -103,21 +99,29 @@ a  {
 	display: none;
 }
 
-.slider-slogan-text {
+.slider-slogan p {
 	margin: 0;
+}
+
+.slider-slogan-text {
+	padding-bottom: 26px;
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
 }
 
-.services-list {
+.services ul {
 	display: flex;
-	margin-bottom: 122px;
+	margin-bottom: 80px;
 }
 
 .services-item {
 	width: 300px;
 	margin-right: 100px;
+}
+
+.services-item:last-child {
+	margin-right: 0;
 }
 
 .services-item h3 {
@@ -128,94 +132,142 @@ a  {
 	text-transform: uppercase;
 }
 
+.services-item p {
+	margin: 0;
+	margin-top: 16px;
+}
+
 .about {
 	display: flex;
-	margin-bottom: 125px;
+	padding-top: 100px;
+	padding-bottom: 52px;
 }
 
 .about-text {
-	margin: 0;
 	margin-right: 150px;
 	width: 660px;
 }
 
-.about-table {
+.about-text p {
 	margin: 0;
+}
+
+.about-table {
 	width: 360px;
 }
 
 .about-text-lead {
+	padding-top: 35px;
+	padding-bottom: 33px;
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
 }
 
-.about-text-services,
-.table-caption {
+.about-text-services {
+	padding-top: 38px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.table-percent {
-	display: flex;
+.about-text ul {
+	padding-top: 24px;
+	padding-left: 36px;
 }
 
-.table-features {
+.about-text li {
+	padding-bottom: 24px;
+}
+
+.table {
+	margin-top: 29px;
+}
+
+.table-caption {
+	margin-left: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+ul.table-percent {
 	display: flex;
+	margin-top: 41px;
+}
+
+ul.table-features {
+	display: flex;
+	width: 345px;
+	margin-top: 20px;	
 }
 
 .table-percent li {
+	margin-right: 23px;
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 45px;
 }
 
-.table-feautures li {
+.table-features li {
+	margin-right: 26px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
 }
 
-.partners-list {
-	display: flex;
+.table-percent span {
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 25px;
 }
 
-.map-contacts {
-	margin: 0;
-	padding: 0;
+
+.partners-list {
+	display: flex;
+	justify-content: space-between;
 }
 
 .map-contacts h3 {
+	margin: 0;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 30px;
 }
 
 .map-contacts p {
+	margin: 0;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
-}
-
-.footer-slogan-container {
-	margin: 0;
-	padding: 0;
 }
 
 .footer-social {
 	display: flex;
 }
 
+.footer-social ul {
+	display: flex;
+	margin-right: 140px; 
+}
+
 .footer-slogan {
+	margin: 0;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
 }
 
 .footer-discount {
+	margin: 0;
+	margin-top: 10px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
+}
+
+.footer-slogan-container {
+	margin-top: 55px;
+	margin-bottom: 75px;
+	margin-left: 38px;
 }
 
 .button {
@@ -373,17 +425,17 @@ textarea:focus:-ms-input-placeholder {
 color: rgb(68, 68, 68);  
 }
 
-.main-container {
+.catalog-container {
 	display: flex;
 	justify-content: space-between;
 }
 
 .catalog-name {
 	margin: 0;
-	padding: 0;
-	margin-bottom: 60px;
-	padding-top: 80px;
+	margin-bottom: 58px;
+	padding-top: 78px;
 	padding-bottom: 110px; 
+	padding-right: 1px;
 	text-align: center;
 	color: #000000;
 	background-color: #eeeeee;
@@ -407,6 +459,7 @@ color: rgb(68, 68, 68);
 }
 
 .sorting p {
+	margin: 0;
 	color: #000000;
 	font-size: 18px;
 	font-weight: 700;
@@ -421,10 +474,13 @@ color: rgb(68, 68, 68);
 	line-height: 18px;
 }
 
-.sorting-feature {
+ul.sorting-feature {
 	display: flex;
+	margin-top: -5px;
+	margin-bottom: 95px;
 	width: 270px;
 	justify-content: space-between;
+	text-transform: uppercase;
 }
 
 .sorting-order {
@@ -503,6 +559,7 @@ color: rgb(68, 68, 68);
 }
 
 .templates-item h3 {
+	margin: 0;
 	color: #000000;
 	font-size: 18px;
 	font-weight: 700;
@@ -510,14 +567,18 @@ color: rgb(68, 68, 68);
 	text-transform: uppercase;
 }
 
+.templates-item p {
+	margin: 0;
+}
+
 .templates-item-description {
+	margin: 0;
 	color: #959595;
 	line-height: 18px;
 }
 
 .pagination-list {
 	display: flex;
-	width: 443px;
 }
 
 .pagination-list a {
