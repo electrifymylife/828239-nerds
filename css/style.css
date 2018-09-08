@@ -667,6 +667,7 @@ ul.table-features {
 	border: 0;
 	background-image: url("../img/close-cross.svg");
 	background-color: #ffffff;
+	opacity: 0.3;
 	cursor: pointer;
 }
 
