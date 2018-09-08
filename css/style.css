@@ -89,7 +89,7 @@ ul.menu-user {
 .basket::before {
 	content: "";
 	position: absolute;
-	right: 100px;
+	left: -40px;
 	top: 2px;
 	width: 15px;
 	height: 15px;
@@ -130,6 +130,8 @@ ul.menu-user {
 	content: "";
 	position: absolute;
 	margin-top: 33px;
+	bottom: 5px;
+	left: 0;
 	width: 75px;
 	height: 2px;
 	background-color: #fb565a;
@@ -226,7 +228,7 @@ ul.menu-user {
 	line-height: 55px;
 }
 
-.slider-slogan-text2 {
+.slider-slogan-info {
 	margin: 0;
 	margin-bottom: 40px;
 }
@@ -248,6 +250,8 @@ ul.menu-user {
 .services-item::before {
 	content: "";
 	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 300px;
 	height: 146px;
 	bottom: 200px;
@@ -289,6 +293,8 @@ ul.menu-user {
 .services::after {
 	content: "";
 	position: absolute;
+	left: 180px;
+  bottom: -294px;
 	width: 1160px;
 	height: 2px;
 	background-color: #eeeeee;
@@ -322,7 +328,7 @@ ul.menu-user {
 	line-height: 45px;
 }
 
-.about-text-lead2 {
+.about-text-info {
 	margin: 0;
 	margin-bottom: 38px;
 }
@@ -410,6 +416,8 @@ ul.table-features {
 .partners::before {
 	content: "";
 	position: absolute;
+	top: -2px;
+  left: 20px;
 	width: 1160px;
 	height: 2px;
 	background-color: #eeeeee;
@@ -418,7 +426,8 @@ ul.table-features {
 .partners::after {
 	content: "";
 	position: absolute;
-	bottom: 3px;
+	bottom: 4px;
+  left: 20px;
 	width: 1160px;
 	height: 2px;
 	background-color: #eeeeee;
@@ -898,7 +907,7 @@ ul.sorting-feature {
 }
 
 .filter-feature {
-	margin-bottom: 34px;
+	margin-bottom: 30px;
 }
 
 .filter-feature legend {
@@ -1005,12 +1014,6 @@ ul.sorting-feature {
 }
 
 .filter-input-radio:checked + label::before {
-	content: "";
-	position: absolute;
-	left: -35px;
-	top: -3px;
-	width: 25px;
-	height: 25px;
 	background-image: url("../img/radio-on.svg");
 }
 
@@ -1031,6 +1034,7 @@ ul.sorting-feature {
 	content: "";
 	position: absolute;
 	left: -35px;
+	top: 0;
 	width: 23px;
 	height: 23px;
 	background-image: url("../img/checkbox-off.svg");
@@ -1039,14 +1043,8 @@ ul.sorting-feature {
 }
 
 .filter-input-checkbox:checked + label::before {
-	content: "";
-	position: absolute;
-	left: -35px;
-	width: 23px;
-	height: 23px;
+	width: 27px;
 	background-image: url("../img/checkbox-on.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .filter-input-checkbox + label::before {
@@ -1161,6 +1159,7 @@ ul.templates-list {
 	width: 360px;
 	height: 231px;
 	bottom: 0;
+	left: 0;
 	background-color: #eeeeee;
 }
 
