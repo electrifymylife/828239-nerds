@@ -233,10 +233,14 @@ ul.menu-user {
 	margin-bottom: 40px;
 }
 
+.services {
+	position: relative;
+}
+
 .services ul {
 	position: relative;
 	display: flex;
-	padding-bottom: 80px;
+	padding-bottom: 82px;
 	padding-top: 82px;
 }
 
@@ -293,8 +297,10 @@ ul.menu-user {
 .services::after {
 	content: "";
 	position: absolute;
-	left: 180px;
-  bottom: -294px;
+	left: 0;
+	right: 0;
+  bottom: 0;
+  margin: 0 auto;
 	width: 1160px;
 	height: 2px;
 	background-color: #eeeeee;
@@ -302,7 +308,7 @@ ul.menu-user {
 
 .about {
 	display: flex;
-	padding-top: 42px;
+	padding-top: 40px;
 	padding-bottom: 51px;
 }
 
@@ -458,6 +464,7 @@ ul.table-features {
 
 .map {
 	position: relative;
+	margin-top: 76.5px;
 	height: 415px;
 	background-color: #e1e1e1;
 }
@@ -482,7 +489,7 @@ ul.table-features {
 	height: 209px;
 	background-color: #ffffff;
 	top: 54px;
-	left: 20px;
+	left: 21px;
 	padding: 50px;
 	z-index: 2;
 }
@@ -524,7 +531,7 @@ ul.table-features {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-right: 140px;
-	margin-top: 50px;
+	margin-top: 70px;
 	width: 260px; 
 }
 
@@ -551,6 +558,10 @@ ul.table-features {
 	fill: #e37376;
 }
 
+.footer-social-button:active {
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
 .footer-slogan {
 	margin: 0;
 	font-size: 36px;
@@ -567,7 +578,7 @@ ul.table-features {
 }
 
 .footer-slogan-container {
-	margin-top: 55px;
+	margin-top: 75.5px;
 	margin-bottom: 75px;
 }
 
@@ -595,6 +606,7 @@ ul.table-features {
 .button-red:active {
 	color: #e37376;
 	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-green {
@@ -609,6 +621,7 @@ ul.table-features {
 .button-green:active {
 	color: #4dc491;
 	background-color: #00aa62;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-yellow {
@@ -623,6 +636,7 @@ ul.table-features {
 .button-yellow:active {
 	color: #edc265;
 	background-color: #e5a722;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .slider .button {
@@ -630,7 +644,7 @@ ul.table-features {
 }
 
 .map-contacts .button {
-	margin-top: 20px;
+	margin-top: 19px;
 	padding: 16px 44px;
 }
 
@@ -639,6 +653,7 @@ ul.table-features {
 }
 
 .templates .button {
+	margin-bottom: 5px;
 	padding: 16px 60px;
 }
 
@@ -672,7 +687,7 @@ ul.table-features {
 .modal-close {
 	position: absolute;
 	width: 20.5px;
-	height: 21px;
+	min-height: 21px;
 	top: 78px;
   right: 90px;
 	font-size: 0;
@@ -681,6 +696,19 @@ ul.table-features {
 	background-color: #ffffff;
 	opacity: 0.3;
 	cursor: pointer;
+}
+
+.modal-show {
+
+}
+
+.modal-close:hover,
+.modal-close:focus {
+	opacity: 1;
+}
+
+.modal-close:active {
+	opacity: 0.1;
 }
 
 .modal h2 {
@@ -750,17 +778,15 @@ input[type="email"]:invalid {
 	border-color: #e74246;
 }
 
-/*меняем цвет плейсхолдера в покое и при наведении*/
-
 input::-webkit-input-placeholder {
 	color: rgba(68, 68, 68, 0.5);
 }
  
-input:-moz-placeholder { /* Firefox 18- */
+input:-moz-placeholder {
 	color: rgba(68, 68, 68, 0.5);  
 }
  
-input::-moz-placeholder {  /* Firefox 19+ */
+input::-moz-placeholder {
 	color: rgba(68, 68, 68, 0.5);  
 }
  
@@ -772,11 +798,11 @@ textarea::-webkit-input-placeholder {
 	color: rgba(68, 68, 68, 0.5);
 }
  
-textarea:-moz-placeholder { /* Firefox 18- */
+textarea:-moz-placeholder {
 	color: rgba(68, 68, 68, 0.5);  
 }
  
-textarea::-moz-placeholder {  /* Firefox 19+ */
+textarea::-moz-placeholder {
 	color: rgba(68, 68, 68, 0.5);  
 }
  
@@ -784,17 +810,15 @@ textarea:-ms-input-placeholder {
 	color: rgba(68, 68, 68, 0.5);  
 }
 
-/*меняем цвет плейсхолдера в фокусе*/
-
 input:focus::-webkit-input-placeholder {
 	color: rgb(68, 68, 68);
 }
 
-input:focus:-moz-placeholder { /* Firefox 18- */
+input:focus:-moz-placeholder {
 	color: rgb(68, 68, 68);  
 }
  
-input:focus::-moz-placeholder {  /* Firefox 19+ */
+input:focus::-moz-placeholder {
 	color: rgb(68, 68, 68);  
 }
  
@@ -806,16 +830,16 @@ textarea:focus::-webkit-input-placeholder {
 	color: rgb(68, 68, 68);
 }
  
-textarea:focus:-moz-placeholder { /* Firefox 18- */
+textarea:focus:-moz-placeholder {
 	color: rgb(68, 68, 68);  
 }
  
-textarea:focus::-moz-placeholder {  /* Firefox 19+ */
+textarea:focus::-moz-placeholder {
 	color: rgb(68, 68, 68);  
 }
  
 textarea:focus:-ms-input-placeholder {  
-color: rgb(68, 68, 68);  
+	color: rgb(68, 68, 68);  
 }
 
 .catalog-container {
@@ -1171,6 +1195,7 @@ ul.sorting-feature {
 .button-gray:active {
 	color: #959595;
 	background-color: #dfdfdf;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .templates {
@@ -1250,7 +1275,7 @@ ul.templates-list {
 
 .templates-item h3 {
 	margin: 0;
-	margin-bottom: 14px;
+	margin-bottom: 15.5px;
 	color: #000000;
 	font-size: 18px;
 	font-weight: 700;
@@ -1269,8 +1294,6 @@ ul.templates-list {
 	color: #959595;
 	line-height: 18px;
 	max-height: 150px;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .pagination-list {
@@ -1327,6 +1350,7 @@ ul.templates-list {
 .pagination-item a:active {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .pagination-item-current a:hover,

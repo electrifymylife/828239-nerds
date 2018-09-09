@@ -31,22 +31,20 @@
 			<div class="catalog-container container">
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
-					<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<form class="filter" id="filter-id" method="get" action="https://echo.htmlacademy.ru">
 						<fieldset class="filter-item filter-price">
 							<legend>Стоимость:</legend>
 							<div class="filter-range">
 								<div class="filter-range-controls">
 									<div class="scale">
-										<div class="bar">
-											
-										</div>
+										<div class="bar"></div>
 										<div class="toggle toggle-min"></div>
 										<div class="toggle toggle-max"></div>
 									</div>
 								</div>
 								<div class="filter-price-controls">
-									<label class="min-price">от <input type="text" name="min-price" value="0"></label>
-									<label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+									<label class="min-price">от <input type="text" form="filter-id" name="min-price" value="0"></label>
+									<label class="max-price">до <input type="text" form="filter-id" name="max-price" value="15000"></label>
 								</div>
 							</div>
 						</fieldset>
@@ -54,15 +52,15 @@
 							<legend>Сетка:</legend>
 							<ul>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" id="filter-adaptive" checked>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" form="filter-id" name="filter-grid" id="filter-adaptive" checked>
 									<label for="filter-adaptive">Адаптивная</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" id="filter-fixed">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" form="filter-id" name="filter-grid" id="filter-fixed">
 									<label for="filter-fixed">Фиксированная</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" id="filter-fluid">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" form="filter-id" name="filter-grid" id="filter-fluid">
 									<label for="filter-fluid">Резиновая</label>
 								</li>
 							</ul>
@@ -71,23 +69,23 @@
 							<legend>Особенности:</legend>
 							<ul>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-slider" id="filter-slider" checked>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" form="filter-id" name="filter-slider" id="filter-slider" checked>
 									<label for="filter-slider">Слайдер</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-block" id="features-block">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" form="filter-id" name="features-block" id="features-block">
 								 	<label for="features-block">Блок преимуществ</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-news" id="filter-news" checked>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" form="filter-id" name="filter-news" id="filter-news" checked>
 									<label for="filter-news">Новости</label>
 								</li>
 								<li class="filterfilter-gallery-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-gallery" id="filter-gallery">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" form="filter-id" name="filter-gallery" id="filter-gallery">
 									<label for="filter-gallery">Галерея</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-basket" id="filter-basket">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" form="filter-id" name="filter-basket" id="filter-basket">
 									<label for="filter-basket">Корзина</label>
 								</li>
 							</ul>
@@ -95,10 +93,10 @@
 						<button class="button button-gray" type="submit">Показать</button>
 					</form>
 				</section>
-					<div>
-						<div class="sorting">
-							<p>Сортировать:</p>
-							<div class="sorting-container">
+				<div>
+					<div class="sorting">
+						<p>Сортировать:</p>
+						<div class="sorting-container">
 							<ul class="sorting-feature">
 								<li class="sorting-feature-item sorting-feature-current"><a>По цене</a></li>
 								<li class="sorting-feature-item"><a href="#">По типу</a></li>
@@ -113,7 +111,6 @@
 					<section class="templates">
 						<h2 class="visually-hidden">Список шаблонов сайтов</h2>
 						<ul class="templates-list">
-							<!-- седона -->
 							<li class="templates-item">
 								<p class="templates-item-image">
 									<img src="img/templates-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов SEDONA">
@@ -124,69 +121,54 @@
 									<button class="button button-red" type="button">9 900 РУБ.</button>
 								</div>
 							</li>
-							<!-- пинк -->
 							<li class="templates-item">
 								<p class="templates-item-image">
 									<img src="img/templates-pink.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android PINK APP">
 								</p>
-								<div class="description-container">
-									<div class="description">
-										<a href="#"><h3>Pink App</h3></a>
-										<p class="templates-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-										<button class="button button-red" type="button">9 900 РУБ.</button>
-									</div>
+								<div class="description">
+									<a href="#"><h3>Pink App</h3></a>
+									<p class="templates-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+									<button class="button button-red" type="button">9 900 РУБ.</button>
 								</div>
 							</li>
-							<!-- барбершоп -->
 							<li class="templates-item">
 								<p class="templates-item-image">
 									<img src="img/templates-barbershop.jpg" width="360" height="576" alt="Сайт салона красоты для мужчин BARBERSHOP">
 								</p>
-								<div class="description-container">
-									<div class="description">
-										<a href="#"><h3>Barbershop</h3></a>
-										<p class="templates-item-description">Сайт салона красоты. Для мужчин, да.</p>
-										<button class="button button-red" type="button">9 900 РУБ.</button>
-									</div>
+								<div class="description">
+									<a href="#"><h3>Barbershop</h3></a>
+									<p class="templates-item-description">Сайт салона красоты. Для мужчин, да.</p>
+									<button class="button button-red" type="button">9 900 РУБ.</button>
 								</div>
 							</li>
-							<!-- мишка -->
 							<li class="templates-item">
 								<p class="templates-item-image">
 									<img src="img/templates-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек MISHKA">
 								</p>
-								<div class="description-container">
-									<div class="description">
-										<a href="#"><h3>Mishka</h3></a>
-										<p class="templates-item-description">Интернет-магазин вязаных игрушек</p>
-										<button class="button button-red" type="button">9 900 РУБ.</button>
-									</div>
+								<div class="description">
+									<a href="#"><h3>Mishka</h3></a>
+									<p class="templates-item-description">Интернет-магазин вязаных игрушек</p>
+									<button class="button button-red" type="button">9 900 РУБ.</button>
 								</div>
 							</li>
-							<!-- учебный сайт -->
 							<li class="templates-item">
 								<p class="templates-item-image">
 									<img src="img/templates-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации A PLUS">
 								</p>
-								<div class="description-container">
-									<div class="description">
-										<a href="#"><h3>A plus</h3></a>
-										<p class="templates-item-description">Лендинг курсов повышения квалификации</p>
-										<button class="button button-red" type="button">9 900 РУБ.</button>
-									</div>
+								<div class="description">
+									<a href="#"><h3>A plus</h3></a>
+									<p class="templates-item-description">Лендинг курсов повышения квалификации</p>
+									<button class="button button-red" type="button">9 900 РУБ.</button>
 								</div>
 							</li>
-							<!-- квас -->
 							<li class="templates-item">
 								<p class="templates-item-image">
 									<img src="img/templates-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса КВАСТ">
 								</p>
-								<div class="description-container">
-									<div class="description">
-										<a href="#"><h3>КВАСТ</h3></a>
-										<p class="templates-item-description">Промо-сайт производителя крафтового кваса</p>
-										<button class="button button-red" type="button">9 900 РУБ.</button>
-									</div>
+								<div class="description">
+									<a href="#"><h3>КВАСТ</h3></a>
+									<p class="templates-item-description">Промо-сайт производителя крафтового кваса</p>
+									<button class="button button-red" type="button">9 900 РУБ.</button>
 								</div>
 							</li>
 						</ul>
@@ -203,12 +185,14 @@
   	<footer class="main-footer">
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="map-contacts">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="button button-red" href="#">Напишите нам</a>
+        <div class="container">
+          <div class="map-contacts">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="button button-red" href="#">Напишите нам</a>
+          </div>
         </div>
         <div class="map-image">
           <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург,ул.Б.Конюшенная, д.19/8">
@@ -250,23 +234,25 @@
   	</footer>
 
     <section class="modal">
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal-form" id="modal-form-id" action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
-        <p>
-          <label for="username">Ваше имя:</label>
-          <input class="modal-userinfo" id="username" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input class="modal-userinfo" id="user-email" type="email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
+        <div class="modal-contacts">
+          <p class="modal-name">
+            <label for="username">Ваше имя:</label>
+            <input class="modal-userinfo" id="username" type="text" form="modal-form-id" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-email">
+            <label for="user-email">Ваш e-mail:</label>
+            <input class="modal-userinfo" id="user-email" type="email" form="modal-form-id" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="modal-text">
           <label for="user-text">Текст письма:</label>
-          <textarea class="modal-userinfo" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-userinfo" id="user-text" form="modal-form-id" name="text" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button button-red" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
-	</body>
+  </body>
 </html>

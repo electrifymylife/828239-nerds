@@ -170,21 +170,21 @@
   	</footer>
 
     <section class="modal">
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal-form" id="modal-form-id" action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
         <div class="modal-contacts">
           <p class="modal-name">
             <label for="username">Ваше имя:</label>
-            <input class="modal-userinfo" id="username" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="modal-userinfo" id="username" type="text" form="modal-form-id" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="modal-email">
             <label for="user-email">Ваш e-mail:</label>
-            <input class="modal-userinfo" id="user-email" type="email" name="email" placeholder="email@example.com">
+            <input class="modal-userinfo" id="user-email" type="email" form="modal-form-id" name="email" placeholder="email@example.com">
           </p>
         </div>
         <p class="modal-text">
           <label for="user-text">Текст письма:</label>
-          <textarea class="modal-userinfo" id="user-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-userinfo" id="user-text" form="modal-form-id" name="text" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button button-red" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
