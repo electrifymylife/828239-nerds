@@ -6,10 +6,14 @@ var username = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
 var isStorageSupport = true;
-var storage = "";
+var storage = {
+  username: "",
+  email: ""
+};
 
 try {
-	storage = localStorage.getItem("username");
+	storage.username = localStorage.getItem("username");
+	storage.email = localStorage.getItem("email");
 } catch (err) {
 	isStorageSupport = false;
 }
@@ -19,8 +23,8 @@ link.addEventListener("click", function (evt) {
 	popup.classList.add("modal-show");
 
 	if (storage) {
-		username.value = storage;
-		email.value = storage;
+		username.value = storage.username;
+		email.value = storage.email;
 		text.focus();
 	} else {
 		username.focus();
