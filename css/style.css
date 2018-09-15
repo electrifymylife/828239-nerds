@@ -269,6 +269,7 @@ ul.menu-user {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	padding-bottom: 82px;
 	padding-top: 82px;
 }
@@ -1075,6 +1076,10 @@ textarea:focus:-ms-input-placeholder {
 	margin-bottom: 53px;
 }
 
+.sorting-container {
+	margin-left: 266px;
+}
+
 .sorting p {
 	margin: 0;
 	color: #000000;
@@ -1098,22 +1103,17 @@ ul.sorting-feature {
 	flex-wrap: wrap;
 	margin-top: -4px;
 	margin-right: 26px;
-	padding-right: 90px;
-	width: 270px;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	padding-right: 61px;
+	width: 273px;
 	text-transform: uppercase;
 }
 
-.sorting-order {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 40px;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+.sorting-feature-item {
+	margin-right: 26px;
+}
+
+.sorting-feature-item:last-child {
+	margin-right: 0;
 }
 
 .sorting-feature-current a {
@@ -1136,6 +1136,13 @@ ul.sorting-feature {
 }
 
 .sorting-order {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 40px;
+}
+
+.sorting-order a {
 	position: relative;
 }
 
@@ -1491,7 +1498,7 @@ ul.templates-list {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	max-height: 300px;
+	max-height: 450px;
 	background-color: #eeeeee;
 	padding-top: 29px;
 	padding-left: 60px;
